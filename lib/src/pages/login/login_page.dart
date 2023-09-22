@@ -7,7 +7,10 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(fit: StackFit.expand, children: [
+      body: Stack(
+        // alignment: Alignment.center, // Don't use this because just center but not expanded for full screen
+          fit: StackFit.expand, // Use this to expand width equality for all layers to full screen
+          children: [
         Container(
           decoration: BoxDecoration(
             gradient: custom_theme.Theme.gradient,
