@@ -16,3 +16,18 @@
    - Important! in Stack function
      - Don't use 'alignment: Alignment.center' because just center but not expanded for full screen
      - Use 'fit: StackFit.expand' to expand width equality for all layers to full screen
+
+3. Widgets
+   - Best practice is everything is widget
+   - Header (flutter logo) in this tutorial is widget also
+   - Use 'Flutter outline' to extract widget (create new widget that extended from stateless widget)
+   - Move widget from 'login_page.dart' to 'login/widgets/header.dart'
+   - The widget header is reusable and easy to maintain
+
+4. Add new packages
+   - go to 'pub.dev' then find new package
+   - this example select 'font_awesome_flutter'
+   - go to installing to guide installation
+   - Add to pubspec.yaml then run pub get
+   - try example code provided on pub.dev
+

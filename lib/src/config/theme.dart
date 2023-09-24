@@ -1,4 +1,3 @@
-import 'dart:ui';
 
 import 'package:flutter/cupertino.dart';
 
@@ -10,6 +9,12 @@ class Theme {
     colors: [gradientStart, gradientEnd],
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
+    stops: [0.0, 1.0],
+  );
+  static const Gradient gradientLoginButton = LinearGradient(
+    colors: [gradientStart, gradientEnd],
+    begin: FractionalOffset(0.0, 0.0),
+    end: FractionalOffset(1.0, 1.0),
     stops: [0.0, 1.0],
   );
 }
